@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+source: https://pypi.org/pypi/flootty/json
+cli:
+  name: flootty
+  description: >-
+    Floobits shared-terminal command-line tool (flootty = Floobits + tty). Lets
+    two or more people share a real-time terminal session inside a Floobits
+    workspace. Distributed as a first-party PyPI package.
+  install:
+    - pip install Flootty
+  repository: https://github.com/Floobits/flootty
+  language: python
+  official: true
+notes: >-
+  The hosted Floobits service (floobits.com) is no longer resolving in DNS
+  (getaddrinfo ENOTFOUND, 2026-07-19), so flootty can no longer connect to a
+  live backend; the CLI is captured here as the provider's published,
+  first-party command surface. No other first-party CLI was found.

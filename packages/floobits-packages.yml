@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+source: https://pypi.org/pypi/flootty/json
+notes: >-
+  Floobits shipped its collaboration surface as editor plugins (Sublime, Vim,
+  Neovim, Emacs, Atom, IntelliJ) and a shared-terminal tool. Only the shared
+  terminal (flootty) is published to a public package registry (PyPI); the
+  editor plugins are distributed via their editors' own package ecosystems and
+  the GitHub org (https://github.com/Floobits), not the language registries
+  probed here. Registries checked with no first-party result: npm, RubyGems,
+  Maven Central, NuGet, crates.io.
+packages:
+  - language: python
+    registry: pypi
+    name: Flootty
+    version: 3.3.0
+    url: https://pypi.org/project/Flootty/
+    install: pip install Flootty
+    official: true
+    description: Floobits collaborative terminal (shared tty for real-time pair terminals).
+    source: https://github.com/Floobits/flootty

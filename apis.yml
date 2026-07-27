@@ -1,7 +1,29 @@
 aid: floobits
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/floobits.png
 name: Floobits
-description: Floobits is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Floobits was a real-time collaborative code editing service — "remote
+  collaboration tools for dev teams, work together, apart." It shipped
+  editor plugins for Sublime Text, Vim, Neovim, Emacs, Atom, and the IntelliJ
+  family of IDEs, plus flootty, a shared-terminal tool for pair terminal
+  sessions. Plugins connected editors to shared Floobits workspaces where
+  multiple developers edited the same files and terminals in real time over a
+  synchronizing backend (built on a diff-match-patch model). Surfaced as an
+  a16z portfolio company and added to the API Evangelist network. As of
+  2026-07-19 the hosted service at floobits.com no longer resolves in DNS and
+  the GitHub org has had no activity since December 2022; the open-source
+  editor plugins and the flootty PyPI package remain the durable public surface.
 url: https://raw.githubusercontent.com/api-evangelist/floobits/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +31,40 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-operational-status: defunct
+x-operational-status-note: >-
+  floobits.com does not resolve (no A/NS records, 2026-07-19); domain
+  registration active through 2027-01-08. GitHub org live but dormant since
+  2022-12.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Collaboration
+- Developer Tools
+- Real-Time
+- Code Editors
+- Pair Programming
+- Remote Work
 apis: []
+common:
+- type: GitHubOrganization
+  url: https://github.com/Floobits
+  name: Floobits on GitHub
+- type: Packages
+  url: packages/floobits-packages.yml
+  name: Published packages (flootty on PyPI)
+- type: CLI
+  url: cli/floobits-cli.yml
+  name: flootty shared-terminal CLI
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
