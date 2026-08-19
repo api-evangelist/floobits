@@ -36,7 +36,7 @@ x-operational-status-note: >-
   floobits.com does not resolve (no A/NS records, 2026-07-19); domain
   registration active through 2027-01-08. GitHub org live but dormant since
   2022-12.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
